@@ -1,6 +1,6 @@
-# Project 1 - Trivia Game
+# Project 2 - Tic Tac Toe
 
-<img src="https://github.com/ediesyoum/tic-tac-toe-js/blob/master/tttboard.jpg" border="1px solid black;" />
+<img src="https://github.com/ediesyoum/tic-tac-toe-js/blob/master/tttboard.jpg" style="border: solid black 1px;" />
 
 ## Description
 
