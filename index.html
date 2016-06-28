@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Tic Tac Toe</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/app.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
 </head>
 
@@ -17,7 +18,7 @@
       <input id="namefield2" type="text" value="Player 2 Name"></input> <button id="submit">SUBMIT</button>
       </p>
 
-      <p><button id="submit">START</button></p>
+      <p><button id="submit" onload="playGame();">START</button></p>
     </article>
 
     <div id="gameboard">
@@ -32,11 +33,10 @@
       <div class="box" id="9"></div>
 
 
-      <div id="player-one">Player 1 name will show here on their turn</div>
-      <div id="player-two">Player 2 name will show here on their turn</div>
+      <div id="messageArea"><p>Player name will show here on their turn</p></div>
     </div>
 
-  	<script type="text/javascript" src="js/app.js"></script>
+
   </body>
 
 </html>

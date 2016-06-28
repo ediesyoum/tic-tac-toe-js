@@ -36,7 +36,7 @@ article {
   width: 70%;
   text-align: center;
 }
-.button {
+.submit {
 	display: block;
 	border: 1px solid black;
 	margin: 2% auto;
@@ -44,7 +44,7 @@ article {
 	background-color: yellow;
 	border-radius: 20%;
 }
-.button:hover {
+.submit:hover {
 	display: block;
 	border: 1px solid black;
 	text-align: center;
