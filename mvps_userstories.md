@@ -12,7 +12,7 @@ Minimum Viable Product (MVPs):
 
 5. Once clicked, X will remain visible to the user in whichever square it is in. O will also similarly remain visible to the user in the gameboard once the turn switch occurs.
 
-6. Need to use classes to manipulate DOM elements, grab session-only data in the browser, and help determine the logic for possible wins or ties after different squares are clicked.
+6. Use classes to manipulate DOM elements, grab session-only data in the browser, and help determine the logic for possible wins or ties after different squares are clicked.
 
 7. If X wins, they will need to be informed that they won.
 

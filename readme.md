@@ -1,6 +1,6 @@
 # Project 1 - Trivia Game
 
-<img src="https://github.com/ediesyoum/tic-tac-toe-js/blob/master/gameboard.jpg" border="1px solid black" />
+<img src="https://github.com/ediesyoum/tic-tac-toe-js/blob/master/gameboard.jpg" border="1px solid black;" />
 
 ## Description
 
