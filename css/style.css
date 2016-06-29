@@ -36,19 +36,21 @@ article {
   width: 70%;
   text-align: center;
 }
-.submit {
-	display: block;
+#submit {
 	border: 1px solid black;
-	margin: 2% auto;
-	font-size: 24px;
-	background-color: yellow;
-	border-radius: 20%;
+	margin: 0auto;
+	font-size: .7em;
+	background-color: orange;
 }
-.submit:hover {
-	display: block;
+#submit:hover {
 	border: 1px solid black;
 	text-align: center;
-	margin: 2% auto;
-	background-color: orangered;
+	background-color: yellow;
 	cursor: pointer;
+}
+#namefield {
+  border: 2px solid black;
+  text-align: center;
+  font-weight: bold;
+  color: grey;
 }
