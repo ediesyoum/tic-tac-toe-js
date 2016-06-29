@@ -13,7 +13,7 @@ window.onload = function () {
 
   var p2Button = document.getElementById('p2submit');
   p2Button.addEventListener('click', function() {
-  //  player 2 div inner html equals the name in the input
+  //  player 2 div inner html equals the name in the
   //  input value of the input field that has player 2 id
 
   })
@@ -54,7 +54,7 @@ var currentPlayer = 1;
       } else {
       alert("You've been clicked!");
     }
-  }
+  } 
 
   // function whosTurn(turnMsg) { // idea for the message that will tell the user whos turn it is
     document.getElementById("messageArea").innerHTML = turnMsg;
