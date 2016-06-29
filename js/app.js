@@ -6,6 +6,17 @@ window.onload = function () {
     startGame();
   }
 
+  var p1Button = document.getElementById('p1submit');
+  p1Button.addEventListener('click', function() {
+
+  })
+
+  var p2Button = document.getElementById('p2submit');
+  p2Button.addEventListener('click', function() {
+  //  player 2 div inner html equals the name in the input
+  //  input value of the input field that has player 2 id
+
+  })
 
 
  var boxes = document.getElementsByClassName('box');
@@ -19,6 +30,7 @@ var startGame = function () {
   }
 }
 
+
 // need to create "playGame" function here
 
   // var playGame = function () {
@@ -31,7 +43,7 @@ var currentPlayer = 1;
 
   var playerTurn = function(box){
     console.log(box);
-      if (!box.innerHTML) { // help from Reed Daniel
+      if (!box.innerHTML) { // help from Reed Daniel & Derek
         if (currentPlayer === 0) {
           box.innerHTML = 'O';
           currentPlayer = 1;
@@ -44,7 +56,7 @@ var currentPlayer = 1;
     }
   }
 
-  function whosTurn(turnMsg) { // idea for the message that will tell the user whos turn it is
+  // function whosTurn(turnMsg) { // idea for the message that will tell the user whos turn it is
     document.getElementById("messageArea").innerHTML = turnMsg;
-  }
+  // }
 };
