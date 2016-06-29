@@ -54,7 +54,7 @@ var currentPlayer = 1;
       } else {
       alert("You've been clicked!");
     }
-  } 
+  }
 
   // function whosTurn(turnMsg) { // idea for the message that will tell the user whos turn it is
     document.getElementById("messageArea").innerHTML = turnMsg;
