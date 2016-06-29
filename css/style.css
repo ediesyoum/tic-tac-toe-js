@@ -54,3 +54,8 @@ article {
   font-weight: bold;
   color: grey;
 }
+#messageArea {
+  text-align: center;
+  margin-top: 5%;
+  font-weight: bold;
+}
