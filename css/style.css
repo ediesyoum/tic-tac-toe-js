@@ -4,11 +4,14 @@ body {
 }
 #gameboard {
   width: 50%;
-  height: 30%;
   margin: 0 auto;
+}
+.row {
+  height: 200px;
 }
 .box {
   width: 30%;
+  /*border-collapse: collapse;*/
   border: 2px solid black;
   display: inline-block;
   background-color: orange;
