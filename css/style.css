@@ -38,7 +38,7 @@ article {
 }
 #submit {
 	border: 1px solid black;
-	margin: 0auto;
+	margin: 0 auto;
 	font-size: .7em;
 	background-color: orange;
 }
@@ -59,3 +59,9 @@ article {
   margin-top: 5%;
   font-weight: bold;
 }
+
+/*@media query { max-width ; 600px and min-width = 400px & orientation+ landscape}{
+  #messageArea {
+    font-weight: normal;
+  }
+}*/
