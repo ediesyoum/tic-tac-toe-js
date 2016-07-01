@@ -12,7 +12,7 @@ window.onload = function () {
         boxes[i].addEventListener('click', function() {
         playGame(this);
         //this.removeEventListener('click', function(){}); // attempted to use this but yes this is quite difficult to actually use
-        whosTurn(p1Name + " has taken their turn. " + p2Name + " should now take their turn." ); // this message is changing with the user WEE
+        whosTurn(p1Name + " is X vs. " + p2Name + " as O" ); // this message is changing with the user WEE
       })
 
     }
@@ -24,7 +24,7 @@ window.onload = function () {
     var p2Name = document.getElementById('p2namefield').value;
     document.getElementById('gameboard').style.display = ''; // help from Derek to get the tiles to show only after names are entered
     document.getElementById('name-entry').style.display = 'none';
-    document.getElementById("messageArea").innerHTML = "Player X will be " + p1Name + " , Player O will be " + p2Name;
+    document.getElementById("messageArea").innerHTML = "Player X will be " + p1Name + " , Player O will be " + p2Name + ". Click any tile to begin.";
     startGame();
   }
   // attempting to make the variables below global
@@ -59,18 +59,15 @@ var playerO = [];
    // console.log(box);
      if (!box.innerHTML) { // help from Reed Daniel & Derek
        if (currentPlayer === 0) {
-         box.innerHTML = 'O';
+         box.innerHTML = '<img src="img/o.png">';
          playerO.push(box.id); // pushes the ID of the box selected in to the
           checkForWins(playerO);
 
-           // checkForWins(); playerO array
-           // console.log(playerO);
          currentPlayer = 1;
        } else {
-         box.innerHTML = 'X';
+         box.innerHTML = '<img src="img/x.png">';
          playerX.push(box.id); // pushes the ID of the box selected in to the playerX array
           checkForWins(playerX);
-         // console.log(playerX);
          currentPlayer = 0;
        }
   //  whosTheWinner();
@@ -79,18 +76,18 @@ var playerO = [];
  }
 }
 
-function checkForWins (boxes) { // CHECKS IF X WON
-    console.log(boxes);
+function checkForWins (boxes) { // passing through boxes as a param
+    // console.log(boxes);
        var winningCombos = [
           ['1', '2', '3'] , ['4', '5', '6'] , ['7', '8', '9'], //horizontal rows
           ['1', '4', '7'] , ['2', '5', '8'] , ['3', '6', '9'], //vertical columns
           ['1', '5', '9'] , ['3', '5', '7'] // diagonals
        ];
 
-     for (var i=0; i < winningCombos.length; i++) { //
+     for (var i=0; i < winningCombos.length; i++) { // assistance from Derek to get this working. -1 refers to a box that has not yet been selected by the user.
        var currentWin = winningCombos[i];
        if (boxes.indexOf(currentWin[0]) != -1 && boxes.indexOf(currentWin[1]) != -1 && boxes.indexOf(currentWin[2]) != -1){
-            alert("winner")
+            alert("You win!")
 
     }
   }
@@ -151,20 +148,18 @@ function checkForWins (boxes) { // CHECKS IF X WON
  // var box9 = document.getElementById('box9');
 //
 
-//     //  {
-        //  playerX = true;
+//     //
         //  whosTheWinner();
 //     //    } else {
-//          (box1 == box2 && box1 == box3 && (box1 == "O")) || //first row
-//          (box4 == box5 && box4 == box6 && (box4 == "O")) || //second row
-//          (box7 == box8 && box7 == box9 && (box7 == "O")) || //third row
-//          (box1 == box4 && box1 == box7 && (box1 == "O")) || //first column
-//          (box2 == box5 && box2 == box8 && (box2 == "O")) || //second column
-//          (box3 == box6 && box3 == box9 && (box3 == "O")) || //third column
-//          (box1 == box5 && box1 == box9 && (box1 == "O")) || //diagonal 1
-//          (box3 == box5 && box3 == box7 && (box3 == "O")) //diagonal 2
+//          (box1 == box2 && box1 == box3 && (box1 == "O"))
+//          (box4 == box5 && box4 == box6 && (box4 == "O")) ||
+//          (box7 == box8 && box7 == box9 && (box7 == "O")) ||
+//          (box1 == box4 && box1 == box7 && (box1 == "O")) ||
+//          (box2 == box5 && box2 == box8 && (box2 == "O")) ||
+//          (box3 == box6 && box3 == box9 && (box3 == "O")) ||
+//          (box1 == box5 && box1 == box9 && (box1 == "O")) ||
+//          (box3 == box5 && box3 == box7 && (box3 == "O")) ||
 //          {
-//              playerO = true;
 //              whosTheWinner();
 //       }
 //

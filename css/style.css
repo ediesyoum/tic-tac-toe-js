@@ -7,21 +7,16 @@ body {
   margin: 0 auto;
 }
 .row {
-  height: 100px;
+  max-height: 100px;
+  margin: 0 auto;
 }
 .box {
-  width: 30%;
-  border-collapse: collapse;
+  max-width: 100px;
+  width: 300px;
+  height: 100px;
   border: 2px solid black;
   display: inline-block;
   background-color: orange;
-  margin: 0px;
-  padding: 0px;
-}
-.box::after {
-  content: '';
-  display: block;
-  margin-top: 70%;
 }
 h1 {
   color: orange;
@@ -29,33 +24,48 @@ h1 {
   font-size: 3em;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
-article {
+h3 {
+  text-align: center;
+  color: orangered;
+  font-weight: bold;
+}
+.welcome {
   text-align: center;
   font-size: 1em;
   font-weight: bold;
+  max-width: 30%;
+  margin: 0 auto;
+  text-align: justify;
 }
-#player-one, #player-two {
+/*#player-one, #player-two {
   margin: 10px auto;
   width: 70%;
   text-align: center;
-}
-#submit {
+}*/
+.submit {
 	border: 1px solid black;
 	margin: 0 auto;
 	font-size: .7em;
 	background-color: orange;
 }
-#submit:hover {
+.submit:hover {
 	border: 1px solid black;
 	text-align: center;
 	background-color: yellow;
 	cursor: pointer;
 }
-#namefield {
-  border: 2px solid black;
+.namefield {
+  border: 1px solid black;
+  text-align: center;
+  color: grey;
+  margin: 0 auto;
+}
+#name-entry {
+  /*border: 2px solid black;*/
   text-align: center;
   font-weight: bold;
   color: grey;
+  margin: 0 auto;
 }
 #messageArea {
   text-align: center;
