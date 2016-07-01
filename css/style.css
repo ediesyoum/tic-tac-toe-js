@@ -19,7 +19,7 @@ body {
   height: 100px;
   box-shadow: 2px 2px 3px #888888;
   display: inline-block;
-  background-color: #F9F49B;
+  background-color: #c7e8d4;
   border-radius: 20%;
   margin: 0 auto;
   box-sizing: border-box;
@@ -67,7 +67,7 @@ h3 {
 #name-entry {
   text-align: center;
   font-weight: bold;
-  color: grey;
+  color: #CF5300;
   margin: 0 auto;
 }
 #messageArea {
