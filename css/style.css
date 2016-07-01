@@ -1,27 +1,36 @@
 body {
-  background-color: white;
+  background-color: #fce2c7;
   font-family: 'Quicksand', sans-serif;
 }
 #gameboard {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
+  max-width: 1000px;
 }
 .row {
-  max-height: 100px;
-  margin: 0 auto;
+  height: 100px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
 }
 .box {
   max-width: 100px;
   width: 300px;
   height: 100px;
-  border: 2px solid black;
+  box-shadow: 2px 2px 3px #888888;
   display: inline-block;
-  background-color: orange;
+  background-color: #F9F49B;
+  border-radius: 20%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+img {
+  margin: 0 auto;
 }
 h1 {
-  color: orange;
+  color: #72dbc6;
   text-align: center;
-  font-size: 3em;
+  font-size: 4em;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 h3 {
@@ -37,11 +46,6 @@ h3 {
   margin: 0 auto;
   text-align: justify;
 }
-/*#player-one, #player-two {
-  margin: 10px auto;
-  width: 70%;
-  text-align: center;
-}*/
 .submit {
 	border: 1px solid black;
 	margin: 0 auto;
@@ -51,7 +55,7 @@ h3 {
 .submit:hover {
 	border: 1px solid black;
 	text-align: center;
-	background-color: yellow;
+	background-color: orangered;
 	cursor: pointer;
 }
 .namefield {
@@ -61,7 +65,6 @@ h3 {
   margin: 0 auto;
 }
 #name-entry {
-  /*border: 2px solid black;*/
   text-align: center;
   font-weight: bold;
   color: grey;
@@ -69,8 +72,16 @@ h3 {
 }
 #messageArea {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 10%;
   font-weight: bold;
+  font-size: 1em;
+  color: teal;
+}
+@media (min-width: 450px) {
+  #gameboard {
+  	height: 50%;
+  	width: 50%;
+  }
 }
 
 /*@media query { max-width ; 600px and min-width = 400px & orientation+ landscape}{
