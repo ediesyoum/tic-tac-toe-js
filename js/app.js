@@ -1,14 +1,18 @@
 window.onload = function () {
-  function whosTurn (turnMsg) { // idea for the message that will tell the user whos turn it is
+  function whosTurn (turnMsg) { // is
     document.getElementById("messageArea").innerHTML = turnMsg;
   }
 
+
+
   function startGame() {
+    var p1Name = document.getElementById('p1namefield').value;
+    var p2Name = document.getElementById('p2namefield').value;
       for (var i=0; i < boxes.length; i++) {
         boxes[i].addEventListener('click', function() {
         playGame(this);
-        //this.removeEventListener('click', function(){});
-        whosTurn(p1Name + " has taken their turn." + p2Name + " should now take their turn." ); // this message is changing with the user WEE
+        //this.removeEventListener('click', function(){}); // attempted to use this but yes this is quite difficult to actually use
+        whosTurn(p1Name + " has taken their turn. " + p2Name + " should now take their turn." ); // this message is changing with the user WEE
       })
 
     }
@@ -65,6 +69,7 @@ var playerO = [];
        } else {
          box.innerHTML = 'X';
          playerX.push(box.id); // pushes the ID of the box selected in to the playerX array
+          checkForWins(playerX);
          // console.log(playerX);
          currentPlayer = 0;
        }
@@ -82,7 +87,7 @@ function checkForWins (boxes) { // CHECKS IF X WON
           ['1', '5', '9'] , ['3', '5', '7'] // diagonals
        ];
 
-     for (var i=0; i < winningCombos.length; i++) {
+     for (var i=0; i < winningCombos.length; i++) { //
        var currentWin = winningCombos[i];
        if (boxes.indexOf(currentWin[0]) != -1 && boxes.indexOf(currentWin[1]) != -1 && boxes.indexOf(currentWin[2]) != -1){
             alert("winner")
