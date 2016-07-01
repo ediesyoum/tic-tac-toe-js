@@ -12,7 +12,7 @@ window.onload = function () {
         boxes[i].addEventListener('click', function() {
         playGame(this);
         //this.removeEventListener('click', function(){}); // attempted to use this but yes this is quite difficult to actually use
-        whosTurn(p1Name + " is X vs. " + p2Name + " as O" ); // this message is changing with the user WEE
+        whosTurn(p1Name + " is X // " + p2Name + " as O" ); // this message is changing with the user WEE
       })
 
     }
@@ -24,7 +24,7 @@ window.onload = function () {
     var p2Name = document.getElementById('p2namefield').value;
     document.getElementById('gameboard').style.display = ''; // help from Derek to get the tiles to show only after names are entered
     document.getElementById('name-entry').style.display = 'none';
-    document.getElementById("messageArea").innerHTML = "Player X will be " + p1Name + " , Player O will be " + p2Name + ". Click any tile to begin.";
+    document.getElementById("messageArea").innerHTML = "X is " + p1Name +" & O is " + p2Name + ". X goes first - Click a tile to begin!";
     startGame();
   }
   // attempting to make the variables below global
