@@ -34,7 +34,16 @@ window.onload = function () {
   var p1Name = document.getElementById('p1namefield').value; // grabbing what is in the input field
   var p2Name = document.getElementById('p2namefield').value;
 
+<<<<<<< f359b5d86c102d50f6e3538a13c4cbd8d4bd5973
 }
+=======
+  })
+
+  var p2Button = document.getElementById('p2submit');
+  p2Button.addEventListener('click', function() {
+  //  player 2 div inner html equals the name in the input
+  //  input value of the input field that has player 2 id
+>>>>>>> got errors last time doing another test
 
 
 var playerX = []; // must tell all clicks from this player to go into this array
@@ -59,7 +68,11 @@ var playerO = [];
          currentPlayer = 0;
        }
     }
+<<<<<<< f359b5d86c102d50f6e3538a13c4cbd8d4bd5973
 }
+=======
+  }
+>>>>>>> got errors last time doing another test
 
 function checkForWins (boxes) { // passing through boxes as a param
     // console.log(boxes);
