@@ -1,5 +1,4 @@
 body {
-<<<<<<< 7eaf7d76677ef158e4b9913890b8618e1ddd9a25
   background-color: #fce2c7;
   font-family: 'Quicksand', sans-serif;
 }
@@ -84,16 +83,6 @@ h3 {
   	width: 50%;
   }
 }
-
-/*@media query { max-width ; 600px and min-width = 400px & orientation+ landscape}{
-  #messageArea {
-    font-weight: normal;
-  }
-}*/
-=======
-  background-color: white;
-  font-family: 'Quicksand', sans-serif;
-}
 #gameboard {
   width: 50%;
   height: 30%;
@@ -146,4 +135,3 @@ article {
   font-weight: bold;
   color: grey;
 }
->>>>>>> first pages commit

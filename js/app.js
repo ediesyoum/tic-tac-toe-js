@@ -1,5 +1,4 @@
 window.onload = function () {
-<<<<<<< 7eaf7d76677ef158e4b9913890b8618e1ddd9a25
   function whosTurn (turnMsg) { // is
     document.getElementById("messageArea").innerHTML = turnMsg;
   }
@@ -24,7 +23,7 @@ window.onload = function () {
   startButton.onclick = function() {
     var p1Name = document.getElementById('p1namefield').value;
     var p2Name = document.getElementById('p2namefield').value;
-    document.getElementById('gameboard').style.display = ''; 
+    document.getElementById('gameboard').style.display = '';
     document.getElementById('name-entry').style.display = 'none';
     document.getElementById("messageArea").innerHTML = "X = " + p1Name +" & O = " + p2Name + ".<br/> X goes first - Click a tile to begin!"; // whoa line breaks work love this
     startGame();
@@ -70,8 +69,6 @@ function checkForWins (boxes) { // passing through boxes as a param
           ['1', '5', '9'] , ['3', '5', '7'] // diagonals
        ];
 
-       var winMessages
-
    for (var i=0; i < winningCombos.length; i++) { //  -1 refers to a box that has not yet been selected by the user
      var currentWin = winningCombos[i];
        if (playerX.indexOf(currentWin[0]) != -1 &&
@@ -89,66 +86,4 @@ function checkForWins (boxes) { // passing through boxes as a param
             alert("It's a tie - no one wins.");
             }
       };
-=======
-  console.log("I've been linked!");
-
-  var startButton = document.getElementById('start');
-  startButton.onclick = function() {
-    startGame();
-  }
-
-  var p1Button = document.getElementById('p1submit');
-  p1Button.addEventListener('click', function() {
-
-  })
-
-  var p2Button = document.getElementById('p2submit');
-  p2Button.addEventListener('click', function() {
-  //  player 2 div inner html equals the name in the input
-  //  input value of the input field that has player 2 id
-
-  })
-
-
- var boxes = document.getElementsByClassName('box');
- console.log(boxes); // it sees the div boxes wee
-
-var startGame = function () {
-    for (var i=0; i < boxes.length; i++) {
-      boxes[i].addEventListener('click', function() {
-      playerTurn(this)
-    })
-  }
-}
-
-
-// need to create "playGame" function here
-
-  // var playGame = function () {
-  //   console.log('s')
-  //
-  //   whosTurn(currentPlayer + " should begin the game.");
-  // }
-
-var currentPlayer = 1;
-
-  var playerTurn = function(box){
-    console.log(box);
-      if (!box.innerHTML) { // help from Reed Daniel & Derek
-        if (currentPlayer === 0) {
-          box.innerHTML = 'O';
-          currentPlayer = 1;
-        } else {
-          box.innerHTML = 'X';
-          currentPlayer = 0;
-        }
-      } else {
-      alert("You've been clicked!");
-    }
-  }
-
-  // function whosTurn(turnMsg) { // idea for the message that will tell the user whos turn it is
-    document.getElementById("messageArea").innerHTML = turnMsg;
-  // }
->>>>>>> first pages commit
 };
