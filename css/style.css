@@ -1,4 +1,5 @@
 body {
+<<<<<<< 7eaf7d76677ef158e4b9913890b8618e1ddd9a25
   background-color: #fce2c7;
   font-family: 'Quicksand', sans-serif;
 }
@@ -89,3 +90,60 @@ h3 {
     font-weight: normal;
   }
 }*/
+=======
+  background-color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+#gameboard {
+  width: 50%;
+  height: 30%;
+  margin: 0 auto;
+}
+.box {
+  width: 30%;
+  border: 2px solid black;
+  display: inline-block;
+  background-color: orange;
+  margin: 0px;
+  padding: 0px;
+}
+.box::after {
+  content: '';
+  display: block;
+  margin-top: 70%;
+}
+h1 {
+  color: orange;
+  text-align: center;
+  font-size: 3em;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+article {
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+}
+#player-one, #player-two {
+  margin: 10px auto;
+  width: 70%;
+  text-align: center;
+}
+#submit {
+	border: 1px solid black;
+	margin: 0auto;
+	font-size: .7em;
+	background-color: orange;
+}
+#submit:hover {
+	border: 1px solid black;
+	text-align: center;
+	background-color: yellow;
+	cursor: pointer;
+}
+#namefield {
+  border: 2px solid black;
+  text-align: center;
+  font-weight: bold;
+  color: grey;
+}
+>>>>>>> first pages commit
