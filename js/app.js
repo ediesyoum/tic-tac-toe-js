@@ -47,13 +47,13 @@ var playerO = [];
    // console.log(box);
      if (!box.innerHTML) { // help from Reed Daniel & Derek
        if (currentPlayer === 0) {
-         box.innerHTML = '<img src="img/o.png">';
+         box.innerHTML = '<img src="img/O.png">';
          playerO.push(box.id); // pushes the ID of the box selected in to the
           checkForWins(playerO);
 
          currentPlayer = 1;
        } else {
-         box.innerHTML = '<img src="img/x.png">';
+         box.innerHTML = '<img src="img/X.png">';
          playerX.push(box.id); // pushes the ID of the box selected in to the playerX array
           checkForWins(playerX);
          currentPlayer = 0;
